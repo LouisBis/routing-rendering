@@ -1,3 +1,3 @@
-export default function ArchivePage(){
-    return <h1>Archive Page</h1>
+export default function ArchivePage() {
+  return <h1>Archive Page</h1>;
 }
