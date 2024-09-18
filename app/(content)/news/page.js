@@ -1,18 +1,13 @@
 import NewsList from "@/components/NewsList";
+import { getAllNews } from "@/lib/news";
 
 export default async function NewsPage() {
-  const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "/news");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch news.");
-  }
-
-  const data = await response.json();
+  const news = getAllNews();
 
   return (
     <>
       <h1>News Page</h1>
-      <NewsList news={data} />
+      <NewsList news={news} />
     </>
   );
 }
