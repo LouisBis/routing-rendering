@@ -86,4 +86,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Database
+*.db
+
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,react,windows,powershell
